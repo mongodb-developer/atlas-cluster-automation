@@ -1,0 +1,108 @@
+{
+  "backupEnabled": true,
+  "biConnector": {
+    "enabled": false,
+    "readPreference": "secondary"
+  },
+  "clusterType": "SHARDED",
+  "diskSizeGB": 512,
+  "diskWarmingMode": "FULLY_WARMED",
+  "encryptionAtRestProvider": "NONE",
+  "mongoDBMajorVersion": "8.0",
+  "name": "AntxMetrics",
+  "pitEnabled": true,
+  "replicationSpecs": [
+    {
+      "regionConfigs": [
+        {
+          "priority": 7,
+          "regionName": "US_EAST_1",
+          "providerName": "AWS",
+          "autoScaling": {
+            "compute": {
+              "enabled": false,
+              "maxInstanceSize": null,
+              "minInstanceSize": null,
+              "scaleDownEnabled": false
+            },
+            "diskGB": {
+              "enabled": true
+            }
+          },
+          "electableSpecs": {
+            "instanceSize": "M30",
+            "nodeCount": 1,
+            "diskIOPS": 3000,
+            "ebsVolumeType": "STANDARD"
+          }
+        },
+        {
+          "priority": 6,
+          "regionName": "US_EAST_4",
+          "providerName": "GCP",
+          "autoScaling": {
+            "compute": {
+              "enabled": false,
+              "maxInstanceSize": null,
+              "minInstanceSize": null,
+              "scaleDownEnabled": false
+            },
+            "diskGB": {
+              "enabled": true
+            }
+          },
+          "electableSpecs": {
+            "instanceSize": "M30",
+            "nodeCount": 2
+          }
+        },
+        {
+          "priority": 5,
+          "regionName": "US_EAST_5",
+          "providerName": "GCP",
+          "autoScaling": {
+            "compute": {
+              "enabled": false,
+              "maxInstanceSize": null,
+              "minInstanceSize": null,
+              "scaleDownEnabled": false
+            },
+            "diskGB": {
+              "enabled": true
+            }
+          },
+          "electableSpecs": {
+            "instanceSize": "M30",
+            "nodeCount": 2
+          }
+        },
+        {
+          "priority": 4,
+          "regionName": "US_EAST_2",
+          "providerName": "AWS",
+          "autoScaling": {
+            "compute": {
+              "enabled": false,
+              "maxInstanceSize": null,
+              "minInstanceSize": null,
+              "scaleDownEnabled": false
+            },
+            "diskGB": {
+              "enabled": true
+            }
+          },
+          "electableSpecs": {
+            "instanceSize": "M30",
+            "nodeCount": 2,
+            "diskIOPS": 3000,
+            "ebsVolumeType": "STANDARD"
+          }
+        }
+      ]
+    }
+  ],
+  "rootCertType": "ISRGROOTX1",
+  "tags": [],
+  "terminationProtectionEnabled": false,
+  "versionReleaseSystem": "LTS"
+}
