@@ -1,0 +1,8 @@
+.env
+.venv*
+.git
+.idea
+.ipynb_checkpoints
+cert
+pem
+.DS_Store
