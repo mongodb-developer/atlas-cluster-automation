@@ -2,7 +2,7 @@
 
 This solution automates common cluster workflows: 
 - create new clusters based on a sizing template
-- create users and client certifiactes
+- create users and client certificates
 - assign roles for cluster, database and collection level access
 - migrate collections between clusters
 - create indexes
