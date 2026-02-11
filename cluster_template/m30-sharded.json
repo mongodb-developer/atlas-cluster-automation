@@ -9,7 +9,6 @@
   "diskWarmingMode": "FULLY_WARMED",
   "encryptionAtRestProvider": "NONE",
   "mongoDBMajorVersion": "8.0",
-  "name": "AntxMetrics",
   "pitEnabled": true,
   "replicationSpecs": [
     {
