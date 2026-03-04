@@ -5,6 +5,7 @@
     "readPreference": "secondary"
   },
   "clusterType": "SHARDED",
+	"configServerManagementMode": "FIXED_TO_DEDICATED",
   "diskSizeGB": 512,
   "diskWarmingMode": "FULLY_WARMED",
   "encryptionAtRestProvider": "NONE",
