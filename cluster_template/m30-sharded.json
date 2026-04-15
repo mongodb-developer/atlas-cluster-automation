@@ -103,6 +103,6 @@
   ],
   "rootCertType": "ISRGROOTX1",
   "tags": [],
-  "terminationProtectionEnabled": false,
+  "terminationProtectionEnabled": true,
   "versionReleaseSystem": "LTS"
 }
